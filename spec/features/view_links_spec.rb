@@ -2,7 +2,7 @@ feature 'view links' do
   scenario 'I can see a list of links' do
     Link.create(url: 'http://www.bbc.co.uk', title: 'BBC')
 
-    visit '/'
+    visit '/links'
 
     expect(page.status_code).to eq 200
 
