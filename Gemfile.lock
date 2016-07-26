@@ -129,16 +129,9 @@ DEPENDENCIES
   data_mapper
   database_cleaner
   dm-postgres-adapter
-<<<<<<< HEAD
-  rake
-  rspec
-  rspec-sinatra
-  rubocop-rspec
-=======
   rerun
   rspec
   rspec-sinatra
->>>>>>> 1d65c25797a0cc47b2fa0923a60bf07244be3c54
   sinatra
 
 RUBY VERSION
