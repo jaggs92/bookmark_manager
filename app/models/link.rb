@@ -1,4 +1,3 @@
-require './app/data_mapper_setup'
 require 'data_mapper'
 require 'dm-postgres-adapter'
 
