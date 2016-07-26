@@ -1,5 +1,4 @@
 require 'spec_helper.rb'
-# require 'database_cleaner'
 
 feature "Viewing links" do
   scenario "As a user I can see my links on the homepage" do
