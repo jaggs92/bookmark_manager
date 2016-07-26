@@ -2,18 +2,14 @@ source 'https://rubygems.org'
 
 ruby '2.3.1'
 
+gem 'data_mapper'
+gem 'dm-postgres-adapter'
 gem 'sinatra'
-gem 'rake'
 
-group :test do
-  gem 'rspec'
-  gem 'rubocop-rspec'
-  gem 'rubocop'
+group :test, :development do
   gem 'capybara'
-  gem 'rack'
-  gem 'byebug'
+  gem 'rspec'
+  gem 'rerun'
   gem 'rspec-sinatra'
-  gem 'data_mapper'
-  gem 'dm-postgres-adapter'
   gem 'database_cleaner'
 end
