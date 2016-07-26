@@ -8,7 +8,7 @@ require 'dm-postgres-adapter'
   property :url,    String
 
 end
-
+#test line
 DataMapper.setup(:default, ENV['DATABASE_URL'] || "postgres://localhost/bookmark_manager_#{ENV['RACK_ENV']}")
 
 DataMapper.finalize
