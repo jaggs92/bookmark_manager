@@ -1,5 +1,3 @@
-require 'capybara/rspec'
-
 feature 'See list of links' do
 
   scenario 'on homepage' do
