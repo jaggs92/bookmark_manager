@@ -10,7 +10,7 @@ include DataMapper::Resource
   property :id,          Serial
   property :first_name,  String
   property :surname,     String
-  property :email,       String, required: true
+  property :email,       String, required: true, unique: true
 
   property :password_digest, Text, length: 60
 
