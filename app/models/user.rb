@@ -10,11 +10,12 @@ include DataMapper::Resource
   property :id,          Serial
   property :first_name,  String
   property :surname,     String
-  property :email,       String
+  property :email,       String, required: true
 
   property :password_digest, Text, length: 60
 
   validates_confirmation_of :password
+  validates_format_of :email, as: :email_address
 
   def password=(password)
     @password = password
