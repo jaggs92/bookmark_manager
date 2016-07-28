@@ -20,4 +20,10 @@ feature 'user signs up' do
     fill_in 'password_confirmation', with: password_confirmation
     click_button 'Add user'
   end
-end
+
+  scenario 'mismatched password keeps you on the same page' do
+      expect{ sign_up(password_confirmation: 'wrong') }.not_to change(User, :count)
+      expect(current_path).to eq '/user'
+      expect(page).to have_content 'Password and confirmation password do not match'
+      end
+    end
