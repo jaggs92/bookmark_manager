@@ -43,7 +43,7 @@ set :session_secret, 'super secret'
 
   post '/user' do
     user = User.create(first_name: params[:first_name], surname: params[:surname],
-    email: params[:email], password: params[:password])
+    email: params[:email], password: params[:password], password_confirmation: params[:password_confirmation])
     session[:user_id] = user.id
     redirect '/links'
   end

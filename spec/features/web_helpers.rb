@@ -7,5 +7,6 @@ def sign_up
   fill_in 'surname', with: 'Fabrizi'
   fill_in 'email', with: 'gfabrizi@gmail.com'
   fill_in 'password', with: 'password'
+#  fill_in 'password_confirmation', with: ''
   click_button 'Add user'
 end
