@@ -1,7 +1,6 @@
 ENV["RACK_ENV"] ||='development'
 
 require 'sinatra/base'
-#require_relative 'models/link'
 require_relative  'data_mapper_setup'
 
 class BookmarkManager < Sinatra::Base
@@ -20,7 +19,6 @@ set :session_secret, 'super secret'
   get '/links/new' do
     erb :'links/new'
   end
-
 
   post '/links' do
     link = Link.create(url: params[:url], title: params[:title])
@@ -53,7 +51,6 @@ set :session_secret, 'super secret'
       @current_user ||= User.get(session[:user_id])
     end
   end
-
 
   # start the server if ruby file executed directly
   run! if app_file == $0

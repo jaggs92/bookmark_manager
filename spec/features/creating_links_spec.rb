@@ -1,5 +1,4 @@
 require 'spec_helper.rb'
-# require 'database_cleaner'
 
 feature "Adding links" do
 
